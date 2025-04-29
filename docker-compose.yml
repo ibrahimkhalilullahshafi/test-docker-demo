@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  doc-app:
+    build: .
+    container_name: doc-app
+    expose:
+      - "8080"
+    depends_on:
+      - nginx
+
+  nginx:
+    image: nginx:latest
+    container_name: nginx-2
+    ports:
+      - "8080:80"
+    volumes:
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
