@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "test": "vitest",
     "test:ci": "vitest run --coverage",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "lint": "eslint . --report-unused-disable-directives --max-warnings 0",
     "format": "prettier --write ."
   },
   "homepage": "https://ibrahimkhalilullahshafi.github.io/test-docker-demo",
